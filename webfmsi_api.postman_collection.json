@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "fa77c48b-2cc8-45d4-a736-6efcf778fa46",
+		"name": "webfmsi_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3140692"
+	},
+	"item": [
+		{
+			"name": "/api/natures",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{webfmsi}}/api/natures",
+					"host": [
+						"{{webfmsi}}"
+					],
+					"path": [
+						"api",
+						"natures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/natures",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name_natures",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{webfmsi}}/api/natures",
+					"host": [
+						"{{webfmsi}}"
+					],
+					"path": [
+						"api",
+						"natures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/natures/:id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name_natures",
+							"value": "River",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "A large natural stream of water flowing in a channel to the sea, a lake, or another river.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{webfmsi}}/api/natures/3",
+					"host": [
+						"{{webfmsi}}"
+					],
+					"path": [
+						"api",
+						"natures",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/natures/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{webfmsi}}/api/natures/4",
+					"host": [
+						"{{webfmsi}}"
+					],
+					"path": [
+						"api",
+						"natures",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "webfmsi",
+			"value": "https://webfmsi.singapoly.com"
+		},
+		{
+			"key": "lumen_local",
+			"value": "http://127.0.0.1:8000"
+		}
+	]
+}
